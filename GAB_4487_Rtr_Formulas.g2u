@@ -1,0 +1,725 @@
+Program.Sub.ScreenSU.Start
+Gui.frmFormulas..Create
+Gui.frmFormulas..Size(4950,8385)
+Gui.frmFormulas..MinX(0)
+Gui.frmFormulas..MinY(0)
+Gui.frmFormulas..Position(0,0)
+Gui.frmFormulas..BackColor(-2147483633)
+Gui.frmFormulas..MousePointer(0)
+Gui.frmFormulas..Caption("GAB Formulas")
+Gui.frmFormulas..MaxButton(False)
+Gui.frmFormulas..Sizeable(False)
+Gui.frmFormulas..Event(UnLoad,frmFormulas_UnLoad)
+Gui.frmFormulas.lblRun.Create(Label,"Runtime",True,1215,255,0,135,105,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblRun.FontStyle(False,False,True,False,False)
+Gui.frmFormulas.lblRun1.Create(Label,"",True,1215,255,0,135,765,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblRun2.Create(Label,"",True,1215,255,0,135,1665,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblRun3.Create(Label,"",True,1215,255,0,135,2565,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblRun4.Create(Label,"",True,1215,255,0,135,3465,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblRun5.Create(Label,"",True,1215,255,0,135,4365,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblRun6.Create(Label,"",True,1215,255,0,135,5265,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblRun7.Create(Label,"",True,1215,255,0,135,6165,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.txtRun1.Create(TextBox,"",True,1215,300,0,135,975,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtRun1.TabStop(True)
+Gui.frmFormulas.txtRun1.TabIndex(2)
+Gui.frmFormulas.txtRun2.Create(TextBox,"",True,1215,300,0,135,1875,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtRun2.TabStop(True)
+Gui.frmFormulas.txtRun2.TabIndex(4)
+Gui.frmFormulas.txtRun3.Create(TextBox,"",True,1215,300,0,135,2775,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtRun3.TabStop(True)
+Gui.frmFormulas.txtRun3.TabIndex(6)
+Gui.frmFormulas.txtRun4.Create(TextBox,"",True,1215,300,0,135,3675,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtRun4.TabStop(True)
+Gui.frmFormulas.txtRun4.TabIndex(8)
+Gui.frmFormulas.txtRun5.Create(TextBox,"",True,1215,300,0,135,4575,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtRun5.TabStop(True)
+Gui.frmFormulas.txtRun5.TabIndex(10)
+Gui.frmFormulas.txtRun6.Create(TextBox,"",True,1215,300,0,135,5475,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtRun6.TabStop(True)
+Gui.frmFormulas.txtRun6.TabIndex(12)
+Gui.frmFormulas.txtRun7.Create(TextBox,"",True,1215,300,0,135,6375,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtRun7.TabStop(True)
+Gui.frmFormulas.txtRun7.TabIndex(14)
+Gui.frmFormulas.txtRunO1.Create(TextBox,"",True,420,300,0,555,1290,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtRunO1.TabStop(True)
+Gui.frmFormulas.txtRunO1.TabIndex(3)
+Gui.frmFormulas.txtRunO2.Create(TextBox,"",True,420,300,0,555,2190,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtRunO2.TabStop(True)
+Gui.frmFormulas.txtRunO2.TabIndex(5)
+Gui.frmFormulas.txtRunO3.Create(TextBox,"",True,420,300,0,555,3090,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtRunO3.TabStop(True)
+Gui.frmFormulas.txtRunO3.TabIndex(7)
+Gui.frmFormulas.txtRunO4.Create(TextBox,"",True,420,300,0,555,3990,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtRunO4.TabStop(True)
+Gui.frmFormulas.txtRunO4.TabIndex(9)
+Gui.frmFormulas.txtRunO5.Create(TextBox,"",True,420,300,0,555,4890,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtRunO5.TabStop(True)
+Gui.frmFormulas.txtRunO5.TabIndex(11)
+Gui.frmFormulas.txtRunO6.Create(TextBox,"",True,420,300,0,555,5790,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtRunO6.TabStop(True)
+Gui.frmFormulas.txtRunO6.TabIndex(13)
+Gui.frmFormulas.lblRunResults.Create(Label,"Runtime Results",True,1380,255,0,45,6900,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblRunResults.FontStyle(True,False,True,False,False)
+Gui.frmFormulas.txtRunRes.Create(TextBox,"",True,1215,300,0,135,7125,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtRunRes.TabStop(True)
+Gui.frmFormulas.txtRunRes.TabIndex(15)
+Gui.frmFormulas.lblSetup.Create(Label,"Setup",True,1215,255,0,1710,105,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblSetup.FontStyle(False,False,True,False,False)
+Gui.frmFormulas.lblSet1.Create(Label,"",True,1215,255,0,1710,765,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblSet2.Create(Label,"",True,1215,255,0,1710,1665,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblSet3.Create(Label,"",True,1215,255,0,1710,2565,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblSet4.Create(Label,"",True,1215,255,0,1710,3465,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblSet5.Create(Label,"",True,1215,255,0,1710,4365,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblSet6.Create(Label,"",True,1215,255,0,1710,5265,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblSet7.Create(Label,"",True,1215,255,0,1710,6165,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.txtSet1.Create(TextBox,"",True,1215,300,0,1710,975,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtSet1.TabStop(True)
+Gui.frmFormulas.txtSet1.TabIndex(17)
+Gui.frmFormulas.txtSet2.Create(TextBox,"",True,1215,300,0,1710,1875,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtSet2.TabStop(True)
+Gui.frmFormulas.txtSet2.TabIndex(19)
+Gui.frmFormulas.txtSet3.Create(TextBox,"",True,1215,300,0,1710,2775,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtSet3.TabStop(True)
+Gui.frmFormulas.txtSet3.TabIndex(21)
+Gui.frmFormulas.txtSet4.Create(TextBox,"",True,1215,300,0,1710,3675,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtSet4.TabStop(True)
+Gui.frmFormulas.txtSet4.TabIndex(23)
+Gui.frmFormulas.txtSet5.Create(TextBox,"",True,1215,300,0,1710,4575,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtSet5.TabStop(True)
+Gui.frmFormulas.txtSet5.TabIndex(25)
+Gui.frmFormulas.txtSet6.Create(TextBox,"",True,1215,300,0,1710,5475,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtSet6.TabStop(True)
+Gui.frmFormulas.txtSet6.TabIndex(27)
+Gui.frmFormulas.txtSet7.Create(TextBox,"",True,1215,300,0,1710,6375,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtSet7.TabStop(True)
+Gui.frmFormulas.txtSet7.TabIndex(29)
+Gui.frmFormulas.txtSetO1.Create(TextBox,"",True,420,300,0,2115,1290,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtSetO1.TabStop(True)
+Gui.frmFormulas.txtSetO1.TabIndex(18)
+Gui.frmFormulas.txtSetO2.Create(TextBox,"",True,420,300,0,2115,2190,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtSetO2.TabStop(True)
+Gui.frmFormulas.txtSetO2.TabIndex(20)
+Gui.frmFormulas.txtSetO3.Create(TextBox,"",True,420,300,0,2115,3090,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtSetO3.TabStop(True)
+Gui.frmFormulas.txtSetO3.TabIndex(22)
+Gui.frmFormulas.txtSetO4.Create(TextBox,"",True,420,300,0,2115,3990,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtSetO4.TabStop(True)
+Gui.frmFormulas.txtSetO4.TabIndex(24)
+Gui.frmFormulas.txtSetO5.Create(TextBox,"",True,420,300,0,2115,4890,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtSetO5.TabStop(True)
+Gui.frmFormulas.txtSetO5.TabIndex(26)
+Gui.frmFormulas.txtSetO6.Create(TextBox,"",True,420,300,0,2115,5790,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtSetO6.TabStop(True)
+Gui.frmFormulas.txtSetO6.TabIndex(28)
+Gui.frmFormulas.lblSetupResults.Create(Label,"Setup Results",True,1245,255,0,1650,6900,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblSetupResults.FontStyle(True,False,True,False,False)
+Gui.frmFormulas.txtSetRes.Create(TextBox,"",True,1215,300,0,1710,7125,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtSetRes.TabStop(True)
+Gui.frmFormulas.txtSetRes.TabIndex(30)
+Gui.frmFormulas.lblFreq.Create(Label,"Frequency",True,1215,255,0,3285,105,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblFreq.FontStyle(False,False,True,False,False)
+Gui.frmFormulas.lblFreq1.Create(Label,"",True,1215,255,0,3285,765,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblFreq2.Create(Label,"",True,1215,255,0,3285,1665,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblFreq3.Create(Label,"",True,1215,255,0,3285,2565,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblFreq4.Create(Label,"",True,1215,255,0,3285,3465,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblFreq5.Create(Label,"",True,1215,255,0,3285,4365,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblFreq6.Create(Label,"",True,1215,255,0,3285,5265,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblFreq7.Create(Label,"",True,1215,255,0,3285,6165,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.txtFreq1.Create(TextBox,"",True,1215,300,0,3285,975,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtFreq1.TabStop(True)
+Gui.frmFormulas.txtFreq1.TabIndex(32)
+Gui.frmFormulas.txtFreq2.Create(TextBox,"",True,1215,300,0,3285,1875,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtFreq2.TabStop(True)
+Gui.frmFormulas.txtFreq2.TabIndex(34)
+Gui.frmFormulas.txtFreq3.Create(TextBox,"",True,1215,300,0,3285,2775,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtFreq3.TabStop(True)
+Gui.frmFormulas.txtFreq3.TabIndex(36)
+Gui.frmFormulas.txtFreq4.Create(TextBox,"",True,1215,300,0,3285,3675,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtFreq4.TabStop(True)
+Gui.frmFormulas.txtFreq4.TabIndex(38)
+Gui.frmFormulas.txtFreq5.Create(TextBox,"",True,1215,300,0,3285,4575,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtFreq5.TabStop(True)
+Gui.frmFormulas.txtFreq5.TabIndex(40)
+Gui.frmFormulas.txtFreq6.Create(TextBox,"",True,1215,300,0,3285,5475,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtFreq6.TabStop(True)
+Gui.frmFormulas.txtFreq6.TabIndex(42)
+Gui.frmFormulas.txtFreq7.Create(TextBox,"",True,1215,300,0,3285,6375,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtFreq7.TabStop(True)
+Gui.frmFormulas.txtFreq7.TabIndex(44)
+Gui.frmFormulas.txtFreqO1.Create(TextBox,"",True,420,300,0,3690,1290,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtFreqO1.TabStop(True)
+Gui.frmFormulas.txtFreqO1.TabIndex(33)
+Gui.frmFormulas.txtFreqO2.Create(TextBox,"",True,420,300,0,3690,2190,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtFreqO2.TabStop(True)
+Gui.frmFormulas.txtFreqO2.TabIndex(35)
+Gui.frmFormulas.txtFreqO3.Create(TextBox,"",True,420,300,0,3690,3090,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtFreqO3.TabStop(True)
+Gui.frmFormulas.txtFreqO3.TabIndex(37)
+Gui.frmFormulas.txtFreqO4.Create(TextBox,"",True,420,300,0,3690,3990,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtFreqO4.TabStop(True)
+Gui.frmFormulas.txtFreqO4.TabIndex(39)
+Gui.frmFormulas.txtFreqO5.Create(TextBox,"",True,420,300,0,3690,4890,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtFreqO5.TabStop(True)
+Gui.frmFormulas.txtFreqO5.TabIndex(41)
+Gui.frmFormulas.txtFreqO6.Create(TextBox,"",True,420,300,0,3690,5790,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtFreqO6.TabStop(True)
+Gui.frmFormulas.txtFreqO6.TabIndex(43)
+Gui.frmFormulas.txtFreqRes.Create(TextBox,"",True,1215,300,0,3285,7125,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtFreqRes.TabStop(True)
+Gui.frmFormulas.txtFreqRes.TabIndex(45)
+Gui.frmFormulas.lblFreqResults.Create(Label,"Frequency Results",True,1530,255,0,3120,6900,True,2,"Arial",8,-2147483633,0)
+Gui.frmFormulas.lblFreqResults.FontStyle(True,False,True,False,False)
+Gui.frmFormulas.cmdCalResults.Create(Button)
+Gui.frmFormulas.cmdCalResults.Size(1545,375)
+Gui.frmFormulas.cmdCalResults.Position(750,7590)
+Gui.frmFormulas.cmdCalResults.Caption("Calculate Results")
+Gui.frmFormulas.cmdCalResults.Event(Click,cmdCalResults_Click)
+Gui.frmFormulas.cmdCalResults.TabStop(True)
+Gui.frmFormulas.cmdCalResults.TabIndex(46)
+Gui.frmFormulas.cmdStoreResults.Create(Button)
+Gui.frmFormulas.cmdStoreResults.Size(1545,375)
+Gui.frmFormulas.cmdStoreResults.Position(2400,7590)
+Gui.frmFormulas.cmdStoreResults.Caption("Store Results")
+Gui.frmFormulas.cmdStoreResults.Event(Click,cmdStoreResults_Click)
+Gui.frmFormulas.cmdStoreResults.TabStop(True)
+Gui.frmFormulas.cmdStoreResults.TabIndex(47)
+Gui.frmFormulas.txtRunOp.Create(TextBox,"",True,1110,300,0,135,390,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtRunOp.Locked(True)
+Gui.frmFormulas.txtSetOp.Create(TextBox,"",True,1110,300,0,1710,390,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtSetOp.Locked(True)
+Gui.frmFormulas.txtFreqOp.Create(TextBox,"",True,1110,300,0,3285,390,False,2,"Arial",8,-2147483643,1)
+Gui.frmFormulas.txtFreqOp.Locked(True)
+Gui.frmFormulas.cmdRunOp.Create(Button)
+Gui.frmFormulas.cmdRunOp.Size(345,345)
+Gui.frmFormulas.cmdRunOp.Position(1275,375)
+Gui.frmFormulas.cmdRunOp.Caption("^")
+Gui.frmFormulas.cmdRunOp.Event(Click,LoadOpCodes)
+Gui.frmFormulas.cmdRunOp.TabStop(True)
+Gui.frmFormulas.cmdRunOp.TabIndex(1)
+Gui.frmFormulas.cmdSetOp.Create(Button)
+Gui.frmFormulas.cmdSetOp.Size(345,345)
+Gui.frmFormulas.cmdSetOp.Position(2850,375)
+Gui.frmFormulas.cmdSetOp.Caption("^")
+Gui.frmFormulas.cmdSetOp.Event(Click,LoadOpCodes)
+Gui.frmFormulas.cmdSetOp.TabStop(True)
+Gui.frmFormulas.cmdSetOp.TabIndex(16)
+Gui.frmFormulas.cmdFreqOp.Create(Button)
+Gui.frmFormulas.cmdFreqOp.Size(345,345)
+Gui.frmFormulas.cmdFreqOp.Position(4425,375)
+Gui.frmFormulas.cmdFreqOp.Caption("^")
+Gui.frmFormulas.cmdFreqOp.Event(Click,LoadOpCodes)
+Gui.frmFormulas.cmdFreqOp.TabStop(True)
+Gui.frmFormulas.cmdFreqOp.TabIndex(31)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+	V.Global.bSixDecimal.Declare
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	'11210 - 000201 (Script 1 Button)
+	'11410 - 008000 (Router Number)
+	V.Local.sIcon.Declare
+	V.Local.iCnt.Declare
+
+	F.Intrinsic.Control.SelectCase(V.Caller.Hook)
+		F.Intrinsic.Control.Case(11210)
+			V.Passed.000201.Set("GAB Formulas")
+		F.Intrinsic.Control.Case(11410)
+			F.Intrinsic.String.Build("{0}\GSS2.ico",V.Caller.GasDir,V.Local.sIcon)
+			F.ODBC.Connection!con.OpenCompanyConnection
+			F.Intrinsic.Control.CallSub(checkoption)
+			F.Intrinsic.Control.For(V.Local.iCnt,1,7,1)
+				Gui.frmFormulas.txtRun[V.Local.iCnt].BackColor(-2147483633)
+				Gui.frmFormulas.txtRunO[V.Local.iCnt].BackColor(-2147483633)
+				Gui.frmFormulas.txtSet[V.Local.iCnt].BackColor(-2147483633)
+				Gui.frmFormulas.txtSetO[V.Local.iCnt].BackColor(-2147483633)
+				Gui.frmFormulas.txtFreq[V.Local.iCnt].BackColor(-2147483633)
+				Gui.frmFormulas.txtFreqO[V.Local.iCnt].BackColor(-2147483633)
+			F.Intrinsic.Control.Next(V.Local.iCnt)
+			Gui.frmFormulas.txtRunOp.BackColor(-2147483633)
+			Gui.frmFormulas.txtRunRes.BackColor(-2147483633)
+			Gui.frmFormulas.txtSetOp.BackColor(-2147483633)
+			Gui.frmFormulas.txtSetRes.BackColor(-2147483633)
+			Gui.frmFormulas.txtFreqOp.BackColor(-2147483633)
+			Gui.frmFormulas.txtFreqRes.BackColor(-2147483633)
+			Gui.frmFormulas..Icon(V.Local.sIcon)
+			Gui.frmFormulas..Show
+			Gui.frmFormulas.cmdRunOp.SetFocus
+	F.Intrinsic.Control.EndSelect
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: GAB_4487_Rtr_Formulas.g2u{0}{0}Subroutine: {1}{0}Error Occurred {2} with description {3}.",V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.frmFormulas_UnLoad.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	F.ODBC.Connection!con.Close
+	F.Intrinsic.Control.End 
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: GAB_4487_Rtr_Formulas.g2u{0}{0}Subroutine: {1}{0}Error Occurred {2} with description {3}.",V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.frmFormulas_UnLoad.End
+
+Program.Sub.CheckOption.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	'OPT_RES_COM table, RUNTIME_D6 field where FUNCT = RS, TYPE = CO;
+	'OP_HEADER table, ID = '400852', the Boolean field
+
+	V.Local.iOpt.Declare
+
+	F.ODBC.Connection!con.ExecuteAndReturn("Select F_Boolean From OP_Header Where ID = 400852;",V.Local.iOpt)
+	F.Intrinsic.Control.If(V.Local.iOpt,=,1)
+		V.Global.bSixDecimal.Set(True)
+	F.Intrinsic.Control.Else
+		V.Global.bSixDecimal.Set(False)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: GAB_4487_Rtr_Formulas.g2u{0}{0}Subroutine: {1}{0}Error Occurred {2} with description {3}.",V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.CheckOption.End
+
+Program.Sub.LoadOpCodes.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.sRet.Declare
+	V.Local.sSQL.Declare
+	V.Local.iCnt.Declare
+	V.Local.iCnt2.Declare
+
+	F.Intrinsic.Control.If(V.DataTable.dtOpCode.Exists)
+		F.Data.DataTable.Close("dtOpCode")
+	F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+
+	F.Intrinsic.Control.SelectCase(V.Passed.000013)
+		F.Intrinsic.Control.Case("Material")
+			F.Intrinsic.UI.Browser("Op Code","con","SELECT MACHINE,OPERATION,DESCRIPTION FROM OP_CODES WHERE LMO ='M' AND (MACHINE <> '' OR OPERATION <> '' OR DESCRIPTION <> '') ORDER BY MACHINE,OPERATION","Operation Identifier*!*Op Code*!*Description","500*!*200*!*800",V.Local.sRet)
+			F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+				F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+				F.Intrinsic.Control.SelectCase(V.Args.ControlName)
+					F.Intrinsic.Control.Case("CMDRUNOP")
+						F.Intrinsic.String.Build("Select FORMULA_FLAG,FORMULA_T1,FORMULA_N1,FORMULA_S2,FORMULA_T2,FORMULA_N2,FORMULA_S3,FORMULA_T3,FORMULA_N3,FORMULA_S4,FORMULA_T4,FORMULA_N4,FORMULA_S5,FORMULA_T5,FORMULA_N5,FORMULA_S6,FORMULA_T6,FORMULA_N6,FORMULA_S7,FORMULA_T7,FORMULA_N7 From Op_Codes Where Machine = '{0}' and Operation = '{1}';",V.Local.sRet(0).Trim,V.Local.sRet(1).Trim,V.Local.sSQL) 
+						F.Data.DataTable.CreateFromSQL("dtOpCode","con",V.Local.sSQL,True)
+						F.Intrinsic.Control.If(V.DataTable.dtOpCode.RowCount,<>,0)
+							F.Intrinsic.Control.If(V.DataTable.dtOpCode(0).FORMULA_FLAG!FieldValTrim,=,"Y")
+								F.Intrinsic.Control.For(V.Local.iCnt,1,7,1)
+									F.Intrinsic.Math.Add(V.Local.iCnt,1,V.Local.iCnt2)
+									Gui.frmFormulas.lblRun[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_T[V.Local.iCnt]!FieldValTrim)
+									Gui.frmFormulas.txtRun[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_N[V.Local.iCnt]!FieldVal)
+									F.Intrinsic.Control.If(V.Local.iCnt2,<>,8)
+										Gui.frmFormulas.txtRunO[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_S[V.Local.iCnt2]!FieldValTrim)
+									F.Intrinsic.Control.EndIf
+								F.Intrinsic.Control.Next(V.Local.iCnt)
+								Gui.frmFormulas.txtRunOp.Text(V.Local.sRet(1))
+								F.Intrinsic.Control.CallSub(enabletextboxes,"Field","Runtime")
+							F.Intrinsic.Control.Else
+								F.Intrinsic.Control.CallSub(disabletextboxes,"Field","Runtime")
+								F.Intrinsic.UI.Msgbox("The selected Op Code does not have a formula setup.","Formula Check")
+								F.Intrinsic.Control.ExitSub
+							F.Intrinsic.Control.EndIf
+						F.Intrinsic.Control.EndIf
+
+					F.Intrinsic.Control.Case("CMDSETOP")
+						F.Intrinsic.String.Build("Select FORMULA_FLAG,FORMULA_T1,FORMULA_N1,FORMULA_S2,FORMULA_T2,FORMULA_N2,FORMULA_S3,FORMULA_T3,FORMULA_N3,FORMULA_S4,FORMULA_T4,FORMULA_N4,FORMULA_S5,FORMULA_T5,FORMULA_N5,FORMULA_S6,FORMULA_T6,FORMULA_N6,FORMULA_S7,FORMULA_T7,FORMULA_N7 From Op_Codes Where Machine = '{0}' and Operation = '{1}';",V.Local.sRet(0).Trim,V.Local.sRet(1).Trim,V.Local.sSQL) 
+						F.Data.DataTable.CreateFromSQL("dtOpCode","con",V.Local.sSQL,True)
+						F.Intrinsic.Control.If(V.DataTable.dtOpCode.RowCount,<>,0)
+							F.Intrinsic.Control.If(V.DataTable.dtOpCode(0).FORMULA_FLAG!FieldValTrim,=,"Y")
+								F.Intrinsic.Control.For(V.Local.iCnt,1,7,1)
+									F.Intrinsic.Math.Add(V.Local.iCnt,1,V.Local.iCnt2)
+									Gui.frmFormulas.lblSet[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_T[V.Local.iCnt]!FieldValTrim)
+									Gui.frmFormulas.txtSet[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_N[V.Local.iCnt]!FieldVal)
+									F.Intrinsic.Control.If(V.Local.iCnt2,<>,8)
+										Gui.frmFormulas.txtSetO[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_S[V.Local.iCnt2]!FieldValTrim)
+									F.Intrinsic.Control.EndIf
+								F.Intrinsic.Control.Next(V.Local.iCnt)
+								Gui.frmFormulas.txtSetOp.Text(V.Local.sRet(1))
+								F.Intrinsic.Control.CallSub(enabletextboxes,"Field","Setup")
+							F.Intrinsic.Control.Else
+								F.Intrinsic.Control.CallSub(disabletextboxes,"Field","Setup")
+								F.Intrinsic.UI.Msgbox("The selected Op Code does not have a formula setup.","Formula Check")
+								F.Intrinsic.Control.ExitSub
+							F.Intrinsic.Control.EndIf
+						F.Intrinsic.Control.EndIf
+
+					F.Intrinsic.Control.Case("CMDFREQOP")
+						F.Intrinsic.String.Build("Select FORMULA_FLAG,FORMULA_T1,FORMULA_N1,FORMULA_S2,FORMULA_T2,FORMULA_N2,FORMULA_S3,FORMULA_T3,FORMULA_N3,FORMULA_S4,FORMULA_T4,FORMULA_N4,FORMULA_S5,FORMULA_T5,FORMULA_N5,FORMULA_S6,FORMULA_T6,FORMULA_N6,FORMULA_S7,FORMULA_T7,FORMULA_N7 From Op_Codes Where Machine = '{0}' and Operation = '{1}';",V.Local.sRet(0).Trim,V.Local.sRet(1).Trim,V.Local.sSQL) 
+						F.Data.DataTable.CreateFromSQL("dtOpCode","con",V.Local.sSQL,True)
+						F.Intrinsic.Control.If(V.DataTable.dtOpCode.RowCount,<>,0)
+							F.Intrinsic.Control.If(V.DataTable.dtOpCode(0).FORMULA_FLAG!FieldValTrim,=,"Y")
+								F.Intrinsic.Control.For(V.Local.iCnt,1,7,1)
+									F.Intrinsic.Math.Add(V.Local.iCnt,1,V.Local.iCnt2)
+									Gui.frmFormulas.lblFreq[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_T[V.Local.iCnt]!FieldValTrim)
+									Gui.frmFormulas.txtFreq[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_N[V.Local.iCnt]!FieldVal)
+									F.Intrinsic.Control.If(V.Local.iCnt2,<>,8)
+										Gui.frmFormulas.txtFreqO[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_S[V.Local.iCnt2]!FieldValTrim)
+									F.Intrinsic.Control.EndIf
+								F.Intrinsic.Control.Next(V.Local.iCnt)
+								Gui.frmFormulas.txtFreqOp.Text(V.Local.sRet(1))
+								F.Intrinsic.Control.CallSub(enabletextboxes,"Field","Frequency")
+							F.Intrinsic.Control.Else
+								F.Intrinsic.Control.CallSub(disabletextboxes,"Field","Frequency")
+								F.Intrinsic.UI.Msgbox("The selected Op Code does not have a formula setup.","Formula Check")
+								F.Intrinsic.Control.ExitSub
+							F.Intrinsic.Control.EndIf
+						F.Intrinsic.Control.EndIf
+
+				F.Intrinsic.Control.EndSelect
+			F.Intrinsic.Control.EndIf
+
+		F.Intrinsic.Control.Case("Labor")
+			F.Intrinsic.UI.Browser("Op Code","con","SELECT MACHINE,OPERATION,DESCRIPTION FROM OP_CODES WHERE LMO ='L' AND (MACHINE <> '' OR OPERATION <> '' OR DESCRIPTION <> '') ORDER BY MACHINE,OPERATION","Operation Identifier*!*Op Code*!*Description","500*!*200*!*800",V.Local.sRet)
+			F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+				F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+				F.Intrinsic.Control.SelectCase(V.Args.ControlName)
+					F.Intrinsic.Control.Case("CMDRUNOP")
+						F.Intrinsic.String.Build("Select FORMULA_FLAG,FORMULA_T1,FORMULA_N1,FORMULA_S2,FORMULA_T2,FORMULA_N2,FORMULA_S3,FORMULA_T3,FORMULA_N3,FORMULA_S4,FORMULA_T4,FORMULA_N4,FORMULA_S5,FORMULA_T5,FORMULA_N5,FORMULA_S6,FORMULA_T6,FORMULA_N6,FORMULA_S7,FORMULA_T7,FORMULA_N7 From Op_Codes Where Machine = '{0}' and Operation = '{1}';",V.Local.sRet(0).Trim,V.Local.sRet(1).Trim,V.Local.sSQL) 
+						F.Data.DataTable.CreateFromSQL("dtOpCode","con",V.Local.sSQL,True)
+						F.Intrinsic.Control.If(V.DataTable.dtOpCode.RowCount,<>,0)
+							F.Intrinsic.Control.If(V.DataTable.dtOpCode(0).FORMULA_FLAG!FieldValTrim,=,"Y")
+								F.Intrinsic.Control.For(V.Local.iCnt,1,7,1)
+									F.Intrinsic.Math.Add(V.Local.iCnt,1,V.Local.iCnt2)
+									Gui.frmFormulas.lblRun[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_T[V.Local.iCnt]!FieldValTrim)
+									Gui.frmFormulas.txtRun[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_N[V.Local.iCnt]!FieldVal)
+									F.Intrinsic.Control.If(V.Local.iCnt2,<>,8)
+										Gui.frmFormulas.txtRunO[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_S[V.Local.iCnt2]!FieldValTrim)
+									F.Intrinsic.Control.EndIf
+								F.Intrinsic.Control.Next(V.Local.iCnt)
+								Gui.frmFormulas.txtRunOp.Text(V.Local.sRet(1))
+								F.Intrinsic.Control.CallSub(enabletextboxes,"Field","Runtime")
+							F.Intrinsic.Control.Else
+								F.Intrinsic.Control.CallSub(disabletextboxes,"Field","Runtime")
+								F.Intrinsic.UI.Msgbox("The selected Op Code does not have a formula setup.","Formula Check")
+								F.Intrinsic.Control.ExitSub
+							F.Intrinsic.Control.EndIf
+						F.Intrinsic.Control.EndIf
+
+					F.Intrinsic.Control.Case("CMDSETOP")
+						F.Intrinsic.String.Build("Select FORMULA_FLAG,FORMULA_T1,FORMULA_N1,FORMULA_S2,FORMULA_T2,FORMULA_N2,FORMULA_S3,FORMULA_T3,FORMULA_N3,FORMULA_S4,FORMULA_T4,FORMULA_N4,FORMULA_S5,FORMULA_T5,FORMULA_N5,FORMULA_S6,FORMULA_T6,FORMULA_N6,FORMULA_S7,FORMULA_T7,FORMULA_N7 From Op_Codes Where Machine = '{0}' and Operation = '{1}';",V.Local.sRet(0).Trim,V.Local.sRet(1).Trim,V.Local.sSQL) 
+						F.Data.DataTable.CreateFromSQL("dtOpCode","con",V.Local.sSQL,True)
+						F.Intrinsic.Control.If(V.DataTable.dtOpCode.RowCount,<>,0)
+							F.Intrinsic.Control.If(V.DataTable.dtOpCode(0).FORMULA_FLAG!FieldValTrim,=,"Y")
+								F.Intrinsic.Control.For(V.Local.iCnt,1,7,1)
+									F.Intrinsic.Math.Add(V.Local.iCnt,1,V.Local.iCnt2)
+									Gui.frmFormulas.lblSet[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_T[V.Local.iCnt]!FieldValTrim)
+									Gui.frmFormulas.txtSet[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_N[V.Local.iCnt]!FieldVal)
+									F.Intrinsic.Control.If(V.Local.iCnt2,<>,8)
+										Gui.frmFormulas.txtSetO[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_S[V.Local.iCnt2]!FieldValTrim)
+									F.Intrinsic.Control.EndIf
+								F.Intrinsic.Control.Next(V.Local.iCnt)
+								Gui.frmFormulas.txtSetOp.Text(V.Local.sRet(1))
+								F.Intrinsic.Control.CallSub(enabletextboxes,"Field","Setup")
+							F.Intrinsic.Control.Else
+								F.Intrinsic.Control.CallSub(disabletextboxes,"Field","Setup")
+								F.Intrinsic.UI.Msgbox("The selected Op Code does not have a formula setup.","Formula Check")
+								F.Intrinsic.Control.ExitSub
+							F.Intrinsic.Control.EndIf
+						F.Intrinsic.Control.EndIf
+
+					F.Intrinsic.Control.Case("CMDFREQOP")
+						F.Intrinsic.String.Build("Select FORMULA_FLAG,FORMULA_T1,FORMULA_N1,FORMULA_S2,FORMULA_T2,FORMULA_N2,FORMULA_S3,FORMULA_T3,FORMULA_N3,FORMULA_S4,FORMULA_T4,FORMULA_N4,FORMULA_S5,FORMULA_T5,FORMULA_N5,FORMULA_S6,FORMULA_T6,FORMULA_N6,FORMULA_S7,FORMULA_T7,FORMULA_N7 From Op_Codes Where Machine = '{0}' and Operation = '{1}';",V.Local.sRet(0).Trim,V.Local.sRet(1).Trim,V.Local.sSQL) 
+						F.Data.DataTable.CreateFromSQL("dtOpCode","con",V.Local.sSQL,True)
+						F.Intrinsic.Control.If(V.DataTable.dtOpCode.RowCount,<>,0)
+							F.Intrinsic.Control.If(V.DataTable.dtOpCode(0).FORMULA_FLAG!FieldValTrim,=,"Y")
+								F.Intrinsic.Control.For(V.Local.iCnt,1,7,1)
+									F.Intrinsic.Math.Add(V.Local.iCnt,1,V.Local.iCnt2)
+									Gui.frmFormulas.lblFreq[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_T[V.Local.iCnt]!FieldValTrim)
+									Gui.frmFormulas.txtFreq[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_N[V.Local.iCnt]!FieldVal)
+									F.Intrinsic.Control.If(V.Local.iCnt2,<>,8)
+										Gui.frmFormulas.txtFreqO[V.Local.iCnt].Text(V.DataTable.dtOpCode(0).FORMULA_S[V.Local.iCnt2]!FieldValTrim)
+									F.Intrinsic.Control.EndIf
+								F.Intrinsic.Control.Next(V.Local.iCnt)
+								Gui.frmFormulas.txtFreqOp.Text(V.Local.sRet(1))
+								F.Intrinsic.Control.CallSub(enabletextboxes,"Field","Frequency")
+							F.Intrinsic.Control.Else
+								F.Intrinsic.Control.CallSub(disabletextboxes,"Field","Frequency")
+								F.Intrinsic.UI.Msgbox("The selected Op Code does not have a formula setup.","Formula Check")
+								F.Intrinsic.Control.ExitSub
+							F.Intrinsic.Control.EndIf
+						F.Intrinsic.Control.EndIf
+
+				F.Intrinsic.Control.EndSelect
+			F.Intrinsic.Control.EndIf
+
+		F.Intrinsic.Control.CaseElse
+			F.Intrinsic.UI.Msgbox("GAB Formulas can only be used with Material or Labor lines.","GAB Formulas")
+			F.Intrinsic.Control.CallSub(frmformulas_unload)
+	F.Intrinsic.Control.EndSelect
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: GAB_4487_Rtr_Formulas.g2u{0}{0}Subroutine: {1}{0}Error Occurred {2} with description {3}.",V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.LoadOpCodes.End
+
+Program.Sub.EnableTextBoxes.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.iCnt.Declare
+
+	F.Intrinsic.Control.SelectCase(V.Args.Field)
+		F.Intrinsic.Control.Case("Runtime")
+			Gui.frmFormulas.txtRunRes.Enabled(True)
+			Gui.frmFormulas.txtRunRes.BackColor(V.Color.White)
+			F.Intrinsic.Control.For(V.Local.iCnt,1,7,1)
+				Gui.frmFormulas.txtRun[V.Local.iCnt].Enabled(True)
+				Gui.frmFormulas.txtRunO[V.Local.iCnt].Enabled(True)
+				Gui.frmFormulas.txtRun[V.Local.iCnt].BackColor(V.Color.White)
+				Gui.frmFormulas.txtRunO[V.Local.iCnt].BackColor(V.Color.White)
+			F.Intrinsic.Control.Next(V.Local.iCnt)
+		F.Intrinsic.Control.Case("Setup")
+			Gui.frmFormulas.txtSetRes.Enabled(True)
+			Gui.frmFormulas.txtSetRes.BackColor(V.Color.White)
+			F.Intrinsic.Control.For(V.Local.iCnt,1,7,1)
+				Gui.frmFormulas.txtSet[V.Local.iCnt].Enabled(True)
+				Gui.frmFormulas.txtSetO[V.Local.iCnt].Enabled(True)
+				Gui.frmFormulas.txtSet[V.Local.iCnt].BackColor(V.Color.White)
+				Gui.frmFormulas.txtSetO[V.Local.iCnt].BackColor(V.Color.White)
+			F.Intrinsic.Control.Next(V.Local.iCnt)
+		F.Intrinsic.Control.Case("Frequency")
+			Gui.frmFormulas.txtFreqRes.Enabled(True)
+			Gui.frmFormulas.txtFreqRes.BackColor(V.Color.White)
+			F.Intrinsic.Control.For(V.Local.iCnt,1,7,1)
+				Gui.frmFormulas.txtFreq[V.Local.iCnt].Enabled(True)
+				Gui.frmFormulas.txtFreqO[V.Local.iCnt].Enabled(True)
+				Gui.frmFormulas.txtFreq[V.Local.iCnt].BackColor(V.Color.White)
+				Gui.frmFormulas.txtFreqO[V.Local.iCnt].BackColor(V.Color.White)
+			F.Intrinsic.Control.Next(V.Local.iCnt)
+	F.Intrinsic.Control.EndSelect
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: GAB_4487_Rtr_Formulas.g2u{0}{0}Subroutine: {1}{0}Error Occurred {2} with description {3}.",V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.EnableTextBoxes.End
+
+Program.Sub.DisableTextBoxes.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.iCnt.Declare
+
+	F.Intrinsic.Control.SelectCase(V.Args.Field)
+		F.Intrinsic.Control.Case("Runtime")
+			Gui.frmFormulas.txtRunOp.Text("")
+			Gui.frmFormulas.txtRunRes.Text("")
+			Gui.frmFormulas.txtRunRes.Enabled(False)
+			Gui.frmFormulas.txtRunRes.BackColor(-2147483633)
+			F.Intrinsic.Control.For(V.Local.iCnt,1,7,1)
+				Gui.frmFormulas.lblRun[V.Local.iCnt].Caption("")
+				Gui.frmFormulas.txtRun[V.Local.iCnt].Text("")
+				Gui.frmFormulas.txtRunO[V.Local.iCnt].Text("")
+				Gui.frmFormulas.txtRun[V.Local.iCnt].Enabled(False)
+				Gui.frmFormulas.txtRunO[V.Local.iCnt].Enabled(False)
+				Gui.frmFormulas.txtRun[V.Local.iCnt].BackColor(-2147483633)
+				Gui.frmFormulas.txtRunO[V.Local.iCnt].BackColor(-2147483633)
+			F.Intrinsic.Control.Next(V.Local.iCnt)
+		F.Intrinsic.Control.Case("Setup")
+			Gui.frmFormulas.txtSetOp.Text("")
+			Gui.frmFormulas.txtSetRes.Text("")
+			Gui.frmFormulas.txtSetRes.Enabled(False)
+			Gui.frmFormulas.txtSetRes.BackColor(-2147483633)
+			F.Intrinsic.Control.For(V.Local.iCnt,1,7,1)
+				Gui.frmFormulas.lblSet[V.Local.iCnt].Caption("")
+				Gui.frmFormulas.txtSet[V.Local.iCnt].Text("")
+				Gui.frmFormulas.txtSetO[V.Local.iCnt].Text("")
+				Gui.frmFormulas.txtSet[V.Local.iCnt].Enabled(False)
+				Gui.frmFormulas.txtSetO[V.Local.iCnt].Enabled(False)
+				Gui.frmFormulas.txtSet[V.Local.iCnt].BackColor(-2147483633)
+				Gui.frmFormulas.txtSetO[V.Local.iCnt].BackColor(-2147483633)
+			F.Intrinsic.Control.Next(V.Local.iCnt)
+		F.Intrinsic.Control.Case("Frequency")
+			Gui.frmFormulas.txtFreqOp.Text("")
+			Gui.frmFormulas.txtFreqRes.Text("")
+			Gui.frmFormulas.txtFreqRes.Enabled(False)
+			Gui.frmFormulas.txtFreqRes.BackColor(-2147483633)
+			F.Intrinsic.Control.For(V.Local.iCnt,1,7,1)
+				Gui.frmFormulas.lblFreq[V.Local.iCnt].Caption("")
+				Gui.frmFormulas.txtFreq[V.Local.iCnt].Text("")
+				Gui.frmFormulas.txtFreqO[V.Local.iCnt].Text("")
+				Gui.frmFormulas.txtFreq[V.Local.iCnt].Enabled(False)
+				Gui.frmFormulas.txtFreqO[V.Local.iCnt].Enabled(False)
+				Gui.frmFormulas.txtFreq[V.Local.iCnt].BackColor(-2147483633)
+				Gui.frmFormulas.txtFreqO[V.Local.iCnt].BackColor(-2147483633)
+			F.Intrinsic.Control.Next(V.Local.iCnt)
+	F.Intrinsic.Control.EndSelect
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: GAB_4487_Rtr_Formulas.g2u{0}{0}Subroutine: {1}{0}Error Occurred {2} with description {3}.",V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.DisableTextBoxes.End
+
+Program.Sub.cmdCalResults_Click.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.iCnt.Declare
+	V.Local.iCnt2.Declare
+	V.Local.iCnt3.Declare
+	V.Local.sOpCode.Declare
+	V.Local.sExpression.Declare
+	V.Local.fResult.Declare
+	V.Local.sResult.Declare
+
+	F.Intrinsic.Control.For(V.Local.iCnt,0,2,1)
+		F.Intrinsic.Control.SelectCase(V.Local.iCnt)
+			F.Intrinsic.Control.Case(0)
+				V.Local.sOpCode.Set(V.Screen.frmFormulas!txtRunOp.Text)
+				F.Intrinsic.Control.If(V.Local.sOpCode.Trim,<>,"")
+					F.Intrinsic.Control.For(V.Local.iCnt2,1,7,1)
+						F.Intrinsic.Control.If(V.Local.iCnt2,=,1)
+							V.Local.fResult.Set(V.Screen.frmFormulas!txtRun[V.Local.iCnt2].Text)
+						F.Intrinsic.Control.Else
+							F.Intrinsic.Math.Sub(V.Local.iCnt2,1,V.Local.iCnt3)
+							V.Local.sExpression.Set(V.Screen.frmFormulas!txtRunO[V.Local.iCnt3].Text)
+							F.Intrinsic.Control.SelectCase(V.Local.sExpression.Trim)
+								F.Intrinsic.Control.Case("+")
+									F.Intrinsic.Math.Add(V.Local.fResult,V.Screen.frmFormulas!txtRun[V.Local.iCnt2].Text,V.Local.fResult)
+								F.Intrinsic.Control.Case("-")
+									F.Intrinsic.Math.Sub(V.Local.fResult,V.Screen.frmFormulas!txtRun[V.Local.iCnt2].Text,V.Local.fResult)
+								F.Intrinsic.Control.Case("*")
+									F.Intrinsic.Math.Mult(V.Local.fResult,V.Screen.frmFormulas!txtRun[V.Local.iCnt2].Text,V.Local.fResult)
+								F.Intrinsic.Control.Case("/")
+									F.Intrinsic.Control.If(V.Local.fResult,<>,0)
+										F.Intrinsic.Math.Div(V.Local.fResult,V.Screen.frmFormulas!txtRun[V.Local.iCnt2].Text,V.Local.fResult)
+									F.Intrinsic.Control.Else
+										V.Local.fResult.Set(0)
+									F.Intrinsic.Control.EndIf
+							F.Intrinsic.Control.EndSelect
+						F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.Next(V.Local.iCnt2)
+					F.Intrinsic.Control.If(V.Global.bSixDecimal)
+						F.Intrinsic.String.Format(V.Local.fResult,"#######.000000",V.Local.sResult)
+					F.Intrinsic.Control.Else
+						F.Intrinsic.String.Format(V.Local.fResult,"#######.0000",V.Local.sResult)
+					F.Intrinsic.Control.EndIf
+					Gui.frmFormulas.txtRunRes.Text(V.Local.sResult)
+				F.Intrinsic.Control.EndIf
+
+			F.Intrinsic.Control.Case(1)
+				V.Local.sOpCode.Set(V.Screen.frmFormulas!txtSetOp.Text)
+				F.Intrinsic.Control.If(V.Local.sOpCode.Trim,<>,"")
+					F.Intrinsic.Control.For(V.Local.iCnt2,1,7,1)
+						F.Intrinsic.Control.If(V.Local.iCnt2,=,1)
+							V.Local.fResult.Set(V.Screen.frmFormulas!txtSet[V.Local.iCnt2].Text)
+						F.Intrinsic.Control.Else
+							F.Intrinsic.Math.Sub(V.Local.iCnt2,1,V.Local.iCnt3)
+							V.Local.sExpression.Set(V.Screen.frmFormulas!txtSetO[V.Local.iCnt3].Text)
+							F.Intrinsic.Control.SelectCase(V.Local.sExpression.Trim)
+								F.Intrinsic.Control.Case("+")
+									F.Intrinsic.Math.Add(V.Local.fResult,V.Screen.frmFormulas!txtSet[V.Local.iCnt2].Text,V.Local.fResult)
+								F.Intrinsic.Control.Case("-")
+									F.Intrinsic.Math.Sub(V.Local.fResult,V.Screen.frmFormulas!txtSet[V.Local.iCnt2].Text,V.Local.fResult)
+								F.Intrinsic.Control.Case("*")
+									F.Intrinsic.Math.Mult(V.Local.fResult,V.Screen.frmFormulas!txtSet[V.Local.iCnt2].Text,V.Local.fResult)
+								F.Intrinsic.Control.Case("/")
+									F.Intrinsic.Control.If(V.Local.fResult,<>,0)
+										F.Intrinsic.Math.Div(V.Local.fResult,V.Screen.frmFormulas!txtSet[V.Local.iCnt2].Text,V.Local.fResult)
+									F.Intrinsic.Control.Else
+										V.Local.fResult.Set(0)
+									F.Intrinsic.Control.EndIf
+							F.Intrinsic.Control.EndSelect
+						F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.Next(V.Local.iCnt2)
+					F.Intrinsic.String.Format(V.Local.fResult,"#######.0000",V.Local.sResult)
+					Gui.frmFormulas.txtSetRes.Text(V.Local.sResult)
+				F.Intrinsic.Control.EndIf
+
+			F.Intrinsic.Control.Case(2)
+				V.Local.sOpCode.Set(V.Screen.frmFormulas!txtFreqOp.Text)
+				F.Intrinsic.Control.If(V.Local.sOpCode.Trim,<>,"")
+					F.Intrinsic.Control.For(V.Local.iCnt2,1,7,1)
+						F.Intrinsic.Control.If(V.Local.iCnt2,=,1)
+							V.Local.fResult.Set(V.Screen.frmFormulas!txtFreq[V.Local.iCnt2].Text)
+						F.Intrinsic.Control.Else
+							F.Intrinsic.Math.Sub(V.Local.iCnt2,1,V.Local.iCnt3)
+							V.Local.sExpression.Set(V.Screen.frmFormulas!txtFreqO[V.Local.iCnt3].Text)
+							F.Intrinsic.Control.SelectCase(V.Local.sExpression.Trim)
+								F.Intrinsic.Control.Case("+")
+									F.Intrinsic.Math.Add(V.Local.fResult,V.Screen.frmFormulas!txtFreq[V.Local.iCnt2].Text,V.Local.fResult)
+								F.Intrinsic.Control.Case("-")
+									F.Intrinsic.Math.Sub(V.Local.fResult,V.Screen.frmFormulas!txtFreq[V.Local.iCnt2].Text,V.Local.fResult)
+								F.Intrinsic.Control.Case("*")
+									F.Intrinsic.Math.Mult(V.Local.fResult,V.Screen.frmFormulas!txtFreq[V.Local.iCnt2].Text,V.Local.fResult)
+								F.Intrinsic.Control.Case("/")
+									F.Intrinsic.Control.If(V.Local.fResult,<>,0)
+										F.Intrinsic.Math.Div(V.Local.fResult,V.Screen.frmFormulas!txtFreq[V.Local.iCnt2].Text,V.Local.fResult)
+									F.Intrinsic.Control.Else
+										V.Local.fResult.Set(0)
+									F.Intrinsic.Control.EndIf
+							F.Intrinsic.Control.EndSelect
+						F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.Next(V.Local.iCnt2)
+					F.Intrinsic.String.Format(V.Local.fResult,"######",V.Local.sResult)
+					Gui.frmFormulas.txtFreqRes.Text(V.Local.sResult)
+				F.Intrinsic.Control.EndIf
+
+		F.Intrinsic.Control.EndSelect
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: GAB_4487_Rtr_Formulas.g2u{0}{0}Subroutine: {1}{0}Error Occurred {2} with description {3}.",V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.cmdCalResults_Click.End
+
+Program.Sub.cmdStoreResults_Click.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.sValue.Declare
+
+	F.Intrinsic.Control.If(V.Screen.frmFormulas!txtRunRes.Text,<>,"")
+		F.Intrinsic.Control.If(V.Global.bSixDecimal)
+			V.Passed.000001.Set(V.Screen.frmFormulas!txtRunRes.Text)
+		F.Intrinsic.Control.Else
+			V.Passed.000118.Set(V.Screen.frmFormulas!txtRunRes.Text)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.If(V.Screen.frmFormulas!txtSetRes.Text,<>,"")
+		F.Intrinsic.String.Replace(V.Screen.frmFormulas!txtSetRes.Text,"-","",V.Local.sValue)
+		V.Passed.000116.Set(V.Local.sValue.Float)
+	F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.If(V.Screen.frmFormulas!txtFreqRes.Text,<>,"")
+		F.Intrinsic.String.Replace(V.Screen.frmFormulas!txtFreqRes.Text,"-","",V.Local.sValue)
+		V.Passed.000237.Set(V.Local.sValue.Float)
+	F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.CallSub(frmformulas_unload)
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: GAB_4487_Rtr_Formulas.g2u{0}{0}Subroutine: {1}{0}Error Occurred {2} with description {3}.",V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.cmdStoreResults_Click.End
+
+Program.Sub.Comments.Start
+${$0$}$GAB_4487_Rtr_Formulas$}$AGV$}$03/15/2017 1:36:05 PM$}$False
+Program.Sub.Comments.End
